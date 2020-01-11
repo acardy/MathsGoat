@@ -1,0 +1,32 @@
+﻿<Page
+    x:Class="MathsGoat.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MathsGoat"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="Black">
+
+    <Grid>
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        
+        <Image Grid.ColumnSpan="3" Source="Assets\background.jpg" Stretch="UniformToFill" />
+        
+        <TextBlock Grid.Column="0" HorizontalAlignment="Center" Margin="0,80" Text="Maths Goat" FontSize="64" Foreground="White" />
+
+        <StackPanel Grid.Column="2" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <HyperlinkButton Click="OnStartClicked">
+                <TextBlock FontSize="48" Foreground="White">Start</TextBlock>
+            </HyperlinkButton>
+            <HyperlinkButton>
+                <TextBlock FontSize="48" Foreground="White">Quit</TextBlock>
+            </HyperlinkButton>
+        </StackPanel>
+    </Grid>
+</Page>
